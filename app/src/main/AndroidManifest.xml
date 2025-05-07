@@ -230,7 +230,21 @@
             android:name="org.autojs.autojs.ui.main.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
-            android:theme="@style/AppTheme.FullScreen" />
+            android:theme="@style/AppTheme.FullScreen" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 新增用于支持 intent:// 的 intent-filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="wpAutoTask" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name="org.autojs.autojs.ui.main.scripts.DisplayManifestActivity"
