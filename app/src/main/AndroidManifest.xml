@@ -691,7 +691,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="${intentCategoryInrt}" />
-                   <data android:scheme="wpAutoTask" />
 
             </intent-filter>
         </activity>
