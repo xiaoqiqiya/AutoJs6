@@ -231,9 +231,6 @@
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.FullScreen" />
-            
-
-    
 
         <activity
             android:name="org.autojs.autojs.ui.main.scripts.DisplayManifestActivity"
@@ -316,7 +313,6 @@
             android:taskAffinity="org.autojs.autojs.ui.log.LogActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.FullScreen" />
-       
 
         <activity
             android:name="org.autojs.autojs.ui.doc.DocumentationActivity"
@@ -695,9 +691,9 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="${intentCategoryInrt}" />
-   <data android:scheme="wpAutoTask" />
+                   <data android:scheme="wpAutoTask" />
+
             </intent-filter>
-            
         </activity>
 
         <activity
